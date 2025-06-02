@@ -1,0 +1,158 @@
+:root {
+    --beige: #f5eee6;
+    --brun-clair: #bfa084;
+    --brun: #8b6f47;
+    --brun-fonce: #4e342e;
+    --blanc: #fff;
+  }
+  
+  body {
+    font-family: 'Cinzel', serif;
+    background: var(--beige);
+    color: var(--brun-fonce);
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: var(--brun-clair);
+    padding: 1rem 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  nav a {
+    color: var(--brun-fonce);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s;
+  }
+  
+  nav a:hover {
+    color: var(--brun);
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--blanc);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(79, 60, 40, 0.08);
+  }
+  
+  footer {
+    background: var(--brun-clair);
+    color: var(--brun-fonce);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  .footer-links {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a {
+    margin: 0 1rem;
+    color: var(--brun-fonce);
+    text-decoration: underline;
+  }
+  
+  input, textarea, select, button {
+    font-family: 'Cinzel', serif;
+    padding: 0.5rem;
+    border: 1px solid var(--brun-clair);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background: var(--brun);
+    color: var(--blanc);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.2s;
+  }
+  
+  button:hover {
+    background: var(--brun-fonce);
+  }
+  
+  @media (max-width: 600px) {
+    main {
+      padding: 1rem;
+    }
+    nav {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+@media (max-width: 400px) {
+    body {
+      font-size: 0.9rem;
+    }
+    main {
+      padding: 0.5rem;
+    }
+    nav a {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .success-message {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .form-group input, .form-group textarea, .form-group select {
+    width: calc(100% - 1rem);
+    margin-right: 1rem;
+  }
+  .form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+  }
+  .form-group input[type="checkbox"] + label {
+    display: inline;
+  }
+  .form-group input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+  }
+  .form-group input[type="radio"] + label {
+    display: inline;
+  }
+  .form-group select {
+    width: calc(100% - 1rem);
+    margin-right: 1rem;
+  }
+  .form-group button {
+    width: auto;
+    margin-top: 1rem;
+  }
+  .form-group textarea {
+    width: calc(100% - 1rem);
+    margin-right: 1rem;
+    height: 100px;
+  }  
