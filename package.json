@@ -1,18 +1,36 @@
 {
-  "name": "1.0.0",
+  "name": "colomba-institut",
   "version": "1.0.0",
-  "description": "1.0.0",
-  "main": "1.0.0",
+  "type": "module",
+  "main": "app.js",
+  
   "scripts": {
     "test": "1.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "1.0.0"
+    "url": "git+https://github.com/SoazicAUBIN/colomba-institut.git"
   },
-  "keywords": [
-    "1.0.0"
-  ],
-  "author": "1.0.0",
-  "license": "MIT"
+  "keywords": [],
+  "author": "Soazic AUBIN",
+  "license": "ISC",
+  "description": "Colomba Institut API",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "body-parser": "^1.20.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
 }
+
