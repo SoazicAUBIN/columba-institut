@@ -21,8 +21,10 @@ app.post('/api/contact', (req, res) => {
   // Ici, tu traites et sécurises les données, puis tu envoies un email ou stockes dans la base
   res.json({message: 'Votre message a bien été envoyé !'});
 });
-
-app.listen(3000, () => console.log('Serveur backend lancé sur le port 3000'));
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+app.use('/api', app);
 
 
 const port = process.env.PORT || 3000;
